@@ -350,7 +350,6 @@ function eatAsNeeded() {
         if (!hasFood) {
             // If we don't have food, logout
             Chat.log('Out of food')
-            logoutWithDiscordAlert("Logged out safely because of a lack of food", "safeLogout")
             KeyBind.keyBind("key.use", false)
         }
     }
@@ -429,7 +428,7 @@ for (let cx = westSapling + cxAdd; cx <= eastSapling; cx += saplingSpacing) {
 
             // Break top wood
             slog("Breaking top log of tree " + GlobalVars.getInt("nebulaTreeBot-index"))
-            pickAxe(Player, 7, 10)
+            pick(axeType, 7, 10)
             Player.getPlayer().lookAt(bx, getY() + 1, bz)
             KeyBind.keyBind("key.attack", true)
 
