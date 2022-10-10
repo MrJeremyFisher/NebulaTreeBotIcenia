@@ -9,7 +9,7 @@ const paneSpace = 3 // How many glass panes are there between each tree
 const saplingSpacing = paneSpace + 1
 const woodChoice = "spruce" // What type of tree are we harvesting?
 const treeLength = 6 // After the first two we cut to get under the tree, how many blocks can we expect to have to break to break saplings?
-const axeType = 'iron_axe';
+const axeType = 'minecraft:iron_axe';
 let sapling = `minecraft:${woodChoice}_sapling`
 let wood = `minecraft:${woodChoice}_log`
 
